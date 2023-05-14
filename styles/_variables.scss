@@ -1,0 +1,111 @@
+// здесь переменные и шаблонные селекторы
+
+$arial: 'Arial', sans-serif;
+$georgia: 'Georgia', serif;
+
+$color-light-xl: #FFFFFF;
+$color-light-l: #F6F6F6;
+$color-light-s: #FAFAFA;
+$color-dark-s: #CDCDCD;
+$color-dark-m: #B2B2B2;
+$color-dark-l: #545454;
+$color-dark-xl: #4C4C4C;
+$color-dark-2xl: #444444;
+$color-dark-3xl: #292929;
+$color-primary: #F1CDB3;
+$color-primary-light: #FDDCC4;
+
+%content {
+	margin: 0;
+	padding: 0 40px;
+}
+
+%h2 {
+	margin-top: 0;
+	font-size: 44px;
+	line-height: 130%;
+	font-weight: normal;
+	color: $color-light-xl;
+
+	@media (max-width: 767px) {
+		font-size: 25px;
+		letter-spacing: 0.06em;
+		margin-bottom: 37px;
+	}
+}
+
+%h3 {
+	color: $color-dark-l;
+	font-size: 35px;
+	font-weight: normal;
+	line-height: 130%;
+	letter-spacing: 0.06em;
+
+	@media (max-width: 767px) {
+		font-size: 25px;
+		text-align: center;
+	}
+}
+
+%btn_dark {
+	display: block;
+	width: 177px;
+	height: 22px;
+	padding: 15px;
+	background-color: $color-primary;
+	border-radius: 26px;
+	color: $color-dark-3xl;
+	text-decoration: none;
+	text-align: center;
+	font-size: 17px;
+	line-height: 130%;
+	letter-spacing: 0.06em;
+	transition: 0.2s ease-out;
+
+	&:hover {
+		background-color: $color-primary-light;
+	}
+}
+
+%btn_light {
+	display: block;
+	width: 153px;
+	height: 20px;
+	padding: 15px;
+	padding-top: 13px;
+	border: 2px solid $color-primary;
+	border-radius: 26px;
+	color: $color-dark-3xl;
+	text-decoration: none;
+	text-align: center;
+	font-size: 17px;
+	line-height: 130%;
+	letter-spacing: 0.06em;
+	transition: 0.2s ease-out;
+
+	&:hover {
+		background-color: $color-primary-light;
+		border: 2px solid $color-primary-light;
+	}
+}
+
+%arrow {
+	display: block;
+	width: 48px;
+	height: 34px;
+	padding-top: 14px;
+	border-radius: 50%;
+	border: 2px solid $color-primary;
+	color: $color-dark-3xl;
+	text-decoration: none;
+	text-align: center;
+	font-weight: bold;
+	transition: 0.2s ease-out;
+
+	&:hover {
+		text-shadow: 0 4px 3px rgba(0, 0, 0, 0.3);
+		background-color: $color-primary-light;
+		border: 2px solid $color-primary-light;
+	}
+}
+
